@@ -195,6 +195,7 @@
                 answerContainers[questionNumber].style.color = "red";
 
             }
+
         });
 
         resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
@@ -218,6 +219,7 @@
             nextButton.style.display = "inline-block";
             submitButton.style.display = "none";
         }
+
     }
 
     function showNextSlide() {
@@ -229,10 +231,14 @@
     }
 
 
+
+
+
     //Variables
     const quizContainer = document.getElementById("quiz");
     const resultsContainer = document.getElementById("results");
     const submitButton = document.getElementById("submit");
+
 
     buildQuiz();
 
@@ -251,4 +257,5 @@
     submitButton.addEventListener("click", showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
+    restartButton.addEventListener("click", restartQuiz)
 })();
