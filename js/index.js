@@ -197,7 +197,7 @@
             }
         });
 
-        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.lenght}`;
+        resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
 
     function showSlide(n) {
@@ -211,7 +211,7 @@
             previousButton.style.display = "inline-block";
         }
 
-        if (currentSlide === slides.lenght - 1) {
+        if (currentSlide === slides.length - 1) {
             nextButton.style.display = "none";
             submitButton.style.display = "inline-block";
         } else {
@@ -245,7 +245,7 @@
 
 
     //Show the first slide
-    showSlide(currentSlide);
+    showSlide(0);
 
     //Event listeners
     submitButton.addEventListener("click", showResults);
